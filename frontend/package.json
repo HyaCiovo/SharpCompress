@@ -10,13 +10,12 @@
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@skeletonlabs/skeleton": "^1.9.0",
     "@sveltejs/vite-plugin-svelte": "^2.4.2",
     "@tsconfig/svelte": "^5.0.0",
     "autoprefixer": "^10.4.14",
+    "daisyui": "^3.2.1",
     "postcss": "^8.4.24",
-    "postcss-import": "^15.1.0",
-    "postcss-load-config": "^4.0.1",
+    "quarkd": "^1.1.0",
     "svelte": "^4.0.3",
     "svelte-check": "^3.4.4",
     "tailwindcss": "^3.3.2",
