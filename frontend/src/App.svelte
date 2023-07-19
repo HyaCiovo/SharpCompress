@@ -1,5 +1,4 @@
 <script lang="ts">
-  import uploadLogo from "./assets/upload.svg";
   import axios from "axios";
   import type { Data } from "./types";
 
