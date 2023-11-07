@@ -6,7 +6,7 @@ import type { RcFile } from 'antd/es/upload';
 import type { UploadFile } from 'antd/es/upload/interface';
 import { getBase64 } from "@/utils";
 import classNames from "classnames"
-import * as styles from "./styles.config.less"
+import styles from "./styles.module.less"
 
 const HomePage = () => {
   const [form] = Form.useForm();
@@ -28,6 +28,7 @@ const HomePage = () => {
     if (file) {
       const { status, name } = file;
       if (status === 'done') {
+        console.log(file)
         setUploaded(file)
         messageApi.open({ type: 'success', content: `${name} 文件上传成功` });
       } else if (status === 'error') {
@@ -186,7 +187,7 @@ const HomePage = () => {
         <div className="max-w-[300px]">
           <p className="font-bold">{previewTitle}</p>
           <div className="flex-col max-w-full">
-            <img src={uploadedFile?.url} className="max-w-full rounded-lg shadow-2xl" alt="previewImage" />
+            <img src={uploadedFile?.preview} className="max-w-full rounded-lg shadow-2xl" alt="previewImage" />
             <div>
               <p className="py-6">Size: {(uploadedFile?.size / 1024 / 1024).toFixed(2)}M</p>
             </div>
