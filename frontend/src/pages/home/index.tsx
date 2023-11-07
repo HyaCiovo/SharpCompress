@@ -1,4 +1,4 @@
-import { Button, Form, Image, Input, InputNumber, Modal, Upload, message } from "antd";
+import { Button, Form, Image, InputNumber, Modal, Upload, message } from "antd";
 import { PlusOutlined } from '@ant-design/icons';
 import axios from "axios";
 import { useState } from "react";
