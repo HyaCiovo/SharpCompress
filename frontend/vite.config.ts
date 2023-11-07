@@ -15,9 +15,9 @@ export default defineConfig({
   },
   build: {
     // build目录名称，默认为"dist"
-    outDir: "build",
+    outDir: "dist",
     // 静态资源存放目录名称，默认为"assets"
-    assetsDir: "static",
+    assetsDir: "assets",
     // 生成map文件，默认为false（不建议设置）
     sourcemap: false,
   },
