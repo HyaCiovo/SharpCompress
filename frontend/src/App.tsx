@@ -4,6 +4,7 @@ import './App.less'
 // import { Link } from "react-router-dom";
 import zhCN from 'antd/locale/zh_CN'
 import { ConfigProvider, message } from "antd";
+import { Link } from "react-router-dom";
 
 const App = () => {
 
@@ -27,13 +28,13 @@ const App = () => {
         }}
       >
         <div id="App" className="App">
-          {/* <nav>
-          <Link to="/">To Home</Link>
-          /
-          <Link to="about">To About</Link>
-          /
-          <Link to="test">To Test</Link>
-        </nav> */}
+          <nav className="mb-4">
+            <Link to="/">To Home</Link>
+            /
+            <Link to="wasm">To Wasm</Link>
+            /
+            <Link to="test">To Test</Link>
+          </nav>
           <Router />
         </div>
       </ConfigProvider>

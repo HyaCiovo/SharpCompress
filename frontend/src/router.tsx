@@ -12,7 +12,7 @@ const Loading = () => {
 const routers = [
   {
     name: "Home",
-    path: "/",
+    path: "home",
     element: React.lazy(() => import("@/pages/home")),
   },
   {
@@ -26,9 +26,9 @@ const routers = [
     element: React.lazy(() => import("@/pages/test")),
   },
   {
-    name: "Login",
-    path: "login",
-    element: React.lazy(() => import("@/pages/login")),
+    name: "Wasm",
+    path: "/wasm",
+    element: React.lazy(() => import("@/pages/wasm")),
   },
   {
     name: "Account",
